@@ -5,6 +5,7 @@ var setAnimationFrameBehaviour = function(fn) {
     window.requestAnimationFrame(requestAnimationFrame_)
   } 
   requestAnimationFrame_(0)
+  // Avoids PS["Main"].main() not being a function
   return function() {}
 }
 

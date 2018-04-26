@@ -28,3 +28,5 @@ foreign import setAnimationFrameBehaviour :: forall f a. f -> (Eff a) Unit
 
 main :: forall a. Eff a Unit
 main = setAnimationFrameBehaviour mainLoop
+
+-- TODO use it as a library (needs some kind of mutable reference to hold all returned values ... maybe?)
